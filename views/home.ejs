@@ -1,0 +1,18 @@
+<%- include('perser/header'); -%>
+<div class="container">
+  <h1>Home</h1>
+  <div class="conatainer">
+    <p><%= content %></p>
+  </div>
+  <% for( let post of posts ) { %>
+  <h1><%= post.postTitle %></h1>
+  <div class="conatainer">
+    <p>
+      <%= post.postBody.substring(0,100)+"..." %>
+      <a href="posts/<%= post.postTitle %> ">read more</a>
+    </p>
+  </div>
+  <% } %>
+</div>
+
+<%- include('perser/footer'); -%>

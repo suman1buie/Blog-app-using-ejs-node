@@ -1,0 +1,36 @@
+<%- include('perser/header'); -%>
+<div class="container">
+  <h1>compose</h1>
+
+  <form action="/" method="POST">
+    <div class="row">
+      <label for="title">Title</label>
+    </div>
+    <div class="row">
+      <input
+        class="form-control"
+        type="text"
+        name="title"
+        id="title"
+        autocomplete="off"
+      />
+    </div>
+    <div class="row">
+      <label for="details">Post</label>
+    </div>
+    <div class="row">
+      <textarea
+        class="form-control"
+        name="message"
+        cols="30"
+        rows="10"
+        id="details"
+      ></textarea>
+    </div>
+    <div class="row">
+      <button class="btn btn-primary" type="submit">Publish</button>
+    </div>
+  </form>
+</div>
+
+<%- include('perser/footer'); -%>
